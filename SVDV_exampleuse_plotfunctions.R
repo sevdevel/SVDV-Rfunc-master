@@ -78,9 +78,9 @@ var.lim         <- c(0,30)
 saveGIF({
   for (i in 1:length(lon.vector)){
     
-    plot.lat.depth.GIF(path.name,experiment.name,var,name=name,factor=factor,lon.slice=lon.vector[i],var.lim=c(0,35))
+    plot.lat.depth.GIF(path.name,experiment.name,var,name=name,factor=factor,lon.slice=lon.vector[i],var.lim=var.lim)
     
-  }}, movie.name = "oceanO2.gif",  ani.width = 800,ani.length = 200,interval=0.75)
+  }}, movie.name = paste(experiment.name,var,".gif"),  ani.width = 800,ani.length = 200,interval=0.75)
 
 # ====================================================
 # EXAMPLE 4 
@@ -110,4 +110,4 @@ saveGIF({
     
     plot.lon.lat.GIF(path.name,experiment.name,var,name=name,factor=factor,depth.slice=depth.vector[i],var.lim=var.lim)
     
-  }}, movie.name = "oceanO2depth.gif",  ani.width = 800,ani.length = 200,interval=0.75)
+  }}, movie.name = paste(experiment.name,var,".gif"),  ani.width = 800,ani.length = 200,interval=0.75)

@@ -541,7 +541,7 @@ plot.lat.depth.GIF <- function(path.name,experiment.name,var,time.slice=9999.5,l
           col = col(100),colkey = list(width = 0.5, cex.axis = 1.4, length = 0.5, 
                                        dist = 0.02, cex.clab = 1.4, side.clab = 2, line.clab = 0.5), 
           las = 1, xlab = "", ylab = "", xaxt = 'n', cex = 1.4, cex.main=2.2, cex.axis=1.6,
-          ylim = c(5,0), xlim = c(-90,90), zlim = var.lim, contour=list(nlevels = 5)
+          ylim = c(5,0), xlim = c(-90,90), zlim = var.lim, contour=list(nlevels = 5,labcex = 1.0)
   )
   
   axis(side = 1, at = seq(-90, 90, by = 30), labels = seq(-90, 90, by = 30), cex.axis=1.6)#, tcl = -0.2)
@@ -659,7 +659,7 @@ plot.lon.lat.GIF <- function(path.name,experiment.name,var,time.slice=9999.5,dep
           col = col(100),colkey = list(width = 0.5, cex.axis = 1.4, length = 0.5, 
                                        dist = 0.02, cex.clab = 1.4, side.clab = 2, line.clab = 0.5), 
           las = 1, xlab = "", ylab = "", xaxt = 'n', yaxt = 'n', cex = 1.4, cex.main=2.2, cex.axis=1.6,
-          ylim = c(-90,90), xlim = c(-180,180), zlim = var.lim, contour=list(nlevels = 5)
+          ylim = c(-90,90), xlim = c(-180,180), zlim = var.lim, contour=list(nlevels = 5,labcex = 1.0)
   )
   
   axis(side = 1, at = seq(-180, 180, by = 90), labels = seq(-180, 180, by = 90), cex.axis=1.6)#, tcl = -0.2)
