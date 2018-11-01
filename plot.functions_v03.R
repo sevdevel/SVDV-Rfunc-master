@@ -545,7 +545,7 @@ plot.lat.depth.GIF <- function(path.name,experiment.name,var,time.slice=9999.5,l
   )
   
   axis(side = 1, at = seq(-90, 90, by = 30), labels = seq(-90, 90, by = 30), cex.axis=1.6)#, tcl = -0.2)
-  mtext(side=1, text=expression(paste("latitude ",degree*E)),line=2.75,adj=0.5,padj=-0.5,cex = 1.8)  
+  mtext(side=1, text=expression(paste("latitude ",degree*N)),line=2.75,adj=0.5,padj=-0.5,cex = 1.8)  
   mtext(side=2, text=expression("depth (km)"),line=1.0,adj=0.5,padj=-1,cex = 1.8) 
   
   label <- lon[lon.slice]
@@ -663,9 +663,9 @@ plot.lon.lat.GIF <- function(path.name,experiment.name,var,time.slice=9999.5,dep
   )
   
   axis(side = 1, at = seq(-180, 180, by = 90), labels = seq(-180, 180, by = 90), cex.axis=1.6)#, tcl = -0.2)
-  mtext(side=1, text=expression(paste("longitude ",degree*N)),line=2.75,adj=0.5,padj=-0.5,cex = 1.8)  
+  mtext(side=1, text=expression(paste("longitude ",degree*E)),line=2.75,adj=0.5,padj=-0.5,cex = 1.8)  
   axis(side = 2, at = seq(-90, 90, by = 30), labels = seq(-90, 90, by = 30), cex.axis=1.6)#, tcl = -0.2)
-  mtext(side=2, text=expression(paste("latitude ",degree*E)),line=1.5,adj=0.5,padj=-1,cex = 1.8) 
+  mtext(side=2, text=expression(paste("latitude ",degree*N)),line=1.5,adj=0.5,padj=-1,cex = 1.8) 
   
   label <- round(depth[depth.slice]*1e-3,digits=2)
   mtext(side=3, text=paste(label,"km depth"),line=2.0,adj=0.0,padj=0,cex = 1.8) 
